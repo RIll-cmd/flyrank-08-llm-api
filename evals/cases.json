@@ -1,10 +1,50 @@
 [
-  {"text":"My credit card was charged twice for this month's subscription.","category":"billing"},
-  {"text":"Please send me a copy of my invoice.","category":"billing"},
-  {"text":"The app crashes every time I open a report.","category":"technical"},
-  {"text":"The export button shows an error and produces no file.","category":"technical"},
-  {"text":"I forgot my password and cannot sign in.","category":"account"},
-  {"text":"Please change the email address on my profile.","category":"account"},
-  {"text":"What are your opening hours?","category":"other"},
-  {"text":"I'd like to send some general feedback about the service.","category":"other"}
+  {
+    "text": "My credit card was charged twice for this month's subscription.",
+    "category": "billing",
+    "urgency": "high",
+    "suggested_team": "billing"
+  },
+  {
+    "text": "Please send me a copy of my invoice.",
+    "category": "billing",
+    "urgency": "low",
+    "suggested_team": "billing"
+  },
+  {
+    "text": "The app crashes every time I open a report.",
+    "category": "technical",
+    "urgency": "high",
+    "suggested_team": "support"
+  },
+  {
+    "text": "The export button shows an error and produces no file.",
+    "category": "technical",
+    "urgency": "high",
+    "suggested_team": "support"
+  },
+  {
+    "text": "I forgot my password and cannot sign in.",
+    "category": "account",
+    "urgency": "high",
+    "suggested_team": "accounts"
+  },
+  {
+    "text": "Please change the email address on my profile.",
+    "category": "account",
+    "urgency": "low",
+    "suggested_team": "accounts"
+  },
+  {
+    "text": "What are your opening hours?",
+    "category": "other",
+    "urgency": "low",
+    "suggested_team": "general"
+  },
+  {
+    "text": "I'd like to send some general feedback about the service.",
+    "category": "other",
+    "urgency": "low",
+    "suggested_team": "general"
+  }
 ]

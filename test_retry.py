@@ -7,7 +7,7 @@ def test_server_errors_retry_but_unauthorized_errors_do_not(monkeypatch):
         def __init__(self,status): self.status_code=status
         def raise_for_status(self):
             if self.status_code >= 400: raise requests.HTTPError(response=self)
-        def json(self): return {'response':'{}'}
+        def json(self): return {'message':{'content':'{}'}}
     calls=[]
     def transient(*args,**kwargs):
         calls.append(1); return Response(503 if len(calls)==1 else 200)
