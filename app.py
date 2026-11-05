@@ -32,7 +32,7 @@ def call_model(prompt, text, repair=0):
         try:
             response=requests.post(url,json=payload,timeout=30)
             response.raise_for_status(); data=response.json()
-            log.info('prompt=%s model=%s input_tokens=%s output_tokens=%s duration_ms=%s repair=%s',VERSION,model,data.get('prompt_eval_count'),data.get('eval_count'),round((time.monotonic()-start)*1000),repair)
+            log.info('prompt=%s model=%s input_tokens=%s output_tokens=%s duration_ms=%s repair=%s api_cost_usd=0',VERSION,model,data.get('prompt_eval_count'),data.get('eval_count'),round((time.monotonic()-start)*1000),repair)
             return data['response']
         except requests.Timeout:
             log.warning('prompt=%s model=%s input_tokens=unknown output_tokens=unknown duration_ms=%s repair=%s outcome=timeout',VERSION,model,round((time.monotonic()-start)*1000),repair)
