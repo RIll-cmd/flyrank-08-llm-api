@@ -1,0 +1,10 @@
+[
+  {"text":"My credit card was charged twice for this month's subscription.","category":"billing"},
+  {"text":"Please send me a copy of my invoice.","category":"billing"},
+  {"text":"The app crashes every time I open a report.","category":"technical"},
+  {"text":"The export button shows an error and produces no file.","category":"technical"},
+  {"text":"I forgot my password and cannot sign in.","category":"account"},
+  {"text":"Please change the email address on my profile.","category":"account"},
+  {"text":"What are your opening hours?","category":"other"},
+  {"text":"I'd like to send some general feedback about the service.","category":"other"}
+]
